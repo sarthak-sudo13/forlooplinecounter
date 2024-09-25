@@ -1,0 +1,8 @@
+#!/bin/bash
+
+for file in ~/shellscripting/Countable/*.txt
+do
+	line_count=$(wc -l < $file)
+	echo "Line Count is $line_count" >> $file
+done
+
